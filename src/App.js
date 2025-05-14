@@ -41,34 +41,3 @@ function App() {
 
 export default App;
 
-// import React from 'react';
-// import { DragDropContext, Draggable, Droppable } from 'react-beautiful-dnd';
-
-// const App = ({ events, onDragEnd }) => {
-//   return (
-//     <DragDropContext onDragEnd={onDragEnd}>
-//       <Droppable droppableId="events">
-//         {(provided) => (
-//           <div {...provided.droppableProps} ref={provided.innerRef}>
-//             {events.map((event, index) => (
-//               <Draggable key={event.id} draggableId={event.id} index={index}>
-//                 {(provided) => (
-//                   <div
-//                     ref={provided.innerRef}
-//                     {...provided.draggableProps}
-//                     {...provided.dragHandleProps}
-//                   >
-//                     {event.title}
-//                   </div>
-//                 )}
-//               </Draggable>
-//             ))}
-//             {provided.placeholder}
-//           </div>  
-//         )}
-//       </Droppable>
-//     </DragDropContext>
-//   );
-// };
-
-// export default App;
